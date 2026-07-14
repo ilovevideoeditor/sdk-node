@@ -1,8 +1,9 @@
 {
   "name": "@ilovevideoeditor/sdk-node",
-  "version": "1.0.0",
-  "description": "Official Node.js / TypeScript SDK for the iLoveVideoEditor REST API",
+  "version": "1.0.1",
+  "description": "Official Node.js / TypeScript SDK for the iLoveVideoEditor cloud video rendering API — submit JSON scenes or templates, queue renders, download MP4/WebM.",
   "type": "module",
+  "sideEffects": false,
   "files": [
     "dist",
     "README.md",
@@ -21,13 +22,30 @@
     "postbuild": "node ../../scripts/fix-esm-imports.mjs dist"
   },
   "keywords": [
-    "video",
+    "ilovevideoeditor",
     "video-rendering",
     "video-api",
-    "ilovevideoeditor",
-    "sdk"
+    "video-generation",
+    "programmatic-video",
+    "video-editing",
+    "video-automation",
+    "cloud-rendering",
+    "render-api",
+    "mp4",
+    "video-templates",
+    "sdk",
+    "api-client",
+    "typescript"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilovevideoeditor/sdk-node.git"
+  },
+  "homepage": "https://ilovevideoeditor.com/docs/sdks",
+  "bugs": {
+    "url": "https://github.com/ilovevideoeditor/sdk-node/issues"
+  },
   "devDependencies": {
     "@types/node": "26.0.1",
     "typescript": "7.0.1-rc"
