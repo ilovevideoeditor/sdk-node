@@ -190,7 +190,6 @@ export interface TemplateSummary {
   platform?: string;
   accentColor?: string;
   icon?: string;
-  mode?: 'preset' | 'project';
   toolId?: string | null;
 }
 
@@ -211,7 +210,6 @@ export interface Template {
   platform?: string;
   accentColor?: string;
   icon?: string;
-  mode?: 'preset' | 'project';
   toolId?: string | null;
   defaultConfig?: Record<string, unknown> | null;
   variablesSchema?: TemplateVariableSchema[] | null;
