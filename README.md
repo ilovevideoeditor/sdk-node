@@ -204,6 +204,7 @@ controller.abort();
 
 - Docs: [ilovevideoeditor.com/docs](https://ilovevideoeditor.com/docs)
 - SDK guides: [ilovevideoeditor.com/docs/sdks](https://ilovevideoeditor.com/docs/sdks)
+- API reference: [OpenAPI spec](https://ilovevideoeditor.com/docs/api/openapi.yaml) · [Postman collection](https://ilovevideoeditor.com/docs/api/postman-collection.json)
 - npm: [npmjs.com/package/@ilovevideoeditor/sdk-node](https://www.npmjs.com/package/@ilovevideoeditor/sdk-node)
 
 ## Other official SDKs
