@@ -2,7 +2,7 @@
 
 Official Node.js / TypeScript SDK for iLoveVideoEditor — render videos programmatically with a cloud video API.
 
-[![npm version](https://img.shields.io/npm/v/@ilovevideoeditor/sdk-node.svg)](https://www.npmjs.com/package/@ilovevideoeditor/sdk-node) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Docs](https://img.shields.io/badge/docs-ilovevideoeditor.com-blue)](https://ilovevideoeditor.com/docs/sdks)
+[![npm version](https://img.shields.io/npm/v/@ilovevideoeditor/sdk-node.svg)](https://www.npmjs.com/package/@ilovevideoeditor/sdk-node) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Docs](https://img.shields.io/badge/docs-ilovevideoeditor.com-blue)](https://ilovevideoeditor.com/docs/sdks) [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/56628364-3f13fc43-a1e0-489a-804a-dc0582999ddf?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D56628364-3f13fc43-a1e0-489a-804a-dc0582999ddf%26entityType%3Dcollection%26workspaceId%3Df6303c1d-8772-405a-8999-6b6077bd13a5)
 
 [iLoveVideoEditor](https://ilovevideoeditor.com) is a cloud video rendering API: submit a JSON scene description (VideoJSON) or a template with variables, queue a render job, and download the resulting MP4/WebM when it completes. This package is the official typed client for Node.js and TypeScript — a zero-dependency ESM library that handles authentication, job queueing, polling, and signed download URLs for you.
 
