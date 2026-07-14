@@ -1,0 +1,38 @@
+{
+  "name": "@ilovevideoeditor/sdk-node",
+  "version": "1.0.0",
+  "description": "Official Node.js / TypeScript SDK for the iLoveVideoEditor REST API",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "postbuild": "node ../../scripts/fix-esm-imports.mjs dist"
+  },
+  "keywords": [
+    "video",
+    "video-rendering",
+    "video-api",
+    "ilovevideoeditor",
+    "sdk"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "26.0.1",
+    "typescript": "7.0.1-rc"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
