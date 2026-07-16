@@ -1,6 +1,6 @@
 {
   "name": "@ilovevideoeditor/sdk-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official Node.js / TypeScript SDK for the iLoveVideoEditor cloud video rendering API — submit JSON scenes or templates, queue renders, download MP4/WebM.",
   "type": "module",
   "sideEffects": false,

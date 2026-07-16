@@ -53,6 +53,7 @@ import type {
   RenditionListResponse,
   RenditionStats,
   RequestOptions,
+  ReviewWorkflowStepRequest,
   RunWorkflowRequest,
   SetDestinationRequest,
   StepTypesResponse,
@@ -1349,6 +1350,25 @@ export class ILoveVideoEditorClient {
     return this.request<{ success: boolean }>(
       `/v1/workflows/runs/${encodePath(runId)}/steps/${encodePath(stepId)}/skip`,
       { method: 'POST' },
+      options,
+    );
+  }
+
+  /**
+   * Approve or reject a human-in-the-loop workflow step that is waiting for
+   * review. Approving resumes the run; rejecting cancels it. Optional
+   * variable edits are applied on approve (keys must be listed in the step's
+   * `editableVariables`).
+   */
+  async reviewWorkflowStep(
+    runId: string,
+    stepId: string,
+    request: ReviewWorkflowStepRequest,
+    options?: RequestOptions,
+  ): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(
+      `/v1/workflows/runs/${encodePath(runId)}/steps/${encodePath(stepId)}/review`,
+      { method: 'POST', body: JSON.stringify(request) },
       options,
     );
   }

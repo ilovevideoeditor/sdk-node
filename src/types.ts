@@ -551,6 +551,7 @@ export type WorkflowStepType =
   | 'render_template'
   | 'render_videojson'
   | 'apply_tool'
+  | 'review'
   | 'send_to_destination';
 
 export interface WorkflowVariableDefinition {
@@ -669,6 +670,12 @@ export interface WorkflowRunListResponse {
 export interface WorkflowRunDetailResponse {
   run: WorkflowRun;
   steps: WorkflowRunStep[];
+}
+
+export interface ReviewWorkflowStepRequest {
+  action: 'approve' | 'reject';
+  /** Variable edits applied on approve (limited to the step's editable keys). */
+  variables?: Record<string, unknown>;
 }
 
 export interface StepTypeInfo {
